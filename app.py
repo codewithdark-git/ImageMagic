@@ -9,7 +9,7 @@ import cv2
 import requests
 from bs4 import BeautifulSoup
 
-st.set_page_config( page_title="ImageMagic - Your Image Processing Companion")
+st.set_page_config(page_title="ImageMagic - Your Image Processing Companion")
 
 MAX_FILE_SIZE = 5 * 1024 * 1024
 
