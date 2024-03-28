@@ -117,7 +117,7 @@ st.write("""
 
 # Sidebar for options
 st.sidebar.title("Options")
-selected_option = st.sidebar.radio("Select an option", ("Home", "Remove Background", "Convert to Pencil Sketch", "Search image", "README.md"))
+selected_option = st.sidebar.radio("Select an option", ("Home", "Remove Background", "Convert to Pencil Sketch", "image with AI","Search image", "README.md"))
 
 # Display README content within the Options section
 if selected_option == "README.md":
@@ -234,6 +234,10 @@ elif selected_option == "Search image":
         else:
             st.warning("Please enter a search query.")
 
+# elif selected_option == "image with AI":
+#     import gradio as gr
+#
+#     gr.load("models/stabilityai/stable-diffusion-xl-base-1.0").launch()
 
 else:
     # Process uploaded image
